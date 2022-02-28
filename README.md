@@ -3,4 +3,4 @@ This repository contains the code for Project on E-Commerce Website made for our
 
 This project is made by Md Adnan Hussain, Gautam Kumar & Vedansh Singh.
 
-Chandigarh University
+Chandigarh University, Mohali
