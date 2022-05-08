@@ -48,7 +48,7 @@
 }
 .product-card{
     flex: 0 0 auto;
-    width: 300px;
+    width: 250px;
     height: 450px;
     margin-right: 40px;
 
@@ -56,20 +56,20 @@
 .product-image{
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 350px;
     overflow: hidden;
 }
 .product-thumbnail{
     width: 100%;
-    height: 300px;
-    object-fit: contain;
+    height: 350px;
+    object-fit: cover;
 }
 .discount-tag{
     position: absolute;
     background-color: #9d4edd;
-    padding: 2px;
+    padding: 5px;
     border-radius: 5px;
-    right: 110px;
+    right: 10px;
     top:10px;
     width: max-content;
 }
@@ -79,7 +79,7 @@
     left: 50%;
     transform: translateX(-50%);
     padding: 10px;
-    width: 40%;
+    width: 90%;
     text-transform: capitalize;
     border: none;
     outline: none;
@@ -101,19 +101,71 @@
 }
 .product-brand{
     text-transform: uppercase;
-    text-align: center;
 }
 .price{
     font-weight: 900;
     font-size: 20px;
-    text-align: center;
-    padding-left: 6rem;
+    
 }
 .actual-price{
     text-decoration: line-through;
     font-size: 20px;
     font-weight: 900;
-    padding: left 14rem;;
-   
-
+    opacity: 0.5;
+    margin-left: 20px;
+   }
+.pre-btn, .nxt-btn{
+    border: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,rgba(255,255,255,0) 0%,white 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+.pre-btn{
+    left: 50px;
+    transform: rotate(180deg);
+}
+.nxt-btn{
+    right: 0;
+}
+.pre-btn img,.nxt-btn img{
+    height: 80px;
+    opacity: 0.2;
+}
+.pre-btn:hover img, .nxt-btn:hover img{
+    opacity: 1;
+}
+.collection-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.collection{
+    position: relative;
+}
+.collection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.collection p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 50px;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 500;
+}
+.collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
 }
