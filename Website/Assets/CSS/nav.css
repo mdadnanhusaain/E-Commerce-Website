@@ -13,12 +13,12 @@
     z-index: 9;
 }
 .nav{
-    padding: 10px 10vw;
+    padding: 5px 5vw;
     display: flex;
     justify-content: space-between;
 }
 .brand-logo{
-    height: 60px;
+    height: 80px;
 }
 .nav-items{
     display: flex;
@@ -40,7 +40,7 @@
     color: black;
 }
 .search-btn{
-    width: 20p%;
+    width: 20%;
     height: 40px;
     padding: 10px 20px;
     border: none;
@@ -64,7 +64,7 @@ p{
     color:violet;
 }
 body{
-    background-color: ;
+    background-color: none;
 }
 .nav-items a{
     margin-left: 20px;
