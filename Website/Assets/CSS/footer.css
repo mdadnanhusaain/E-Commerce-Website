@@ -27,4 +27,50 @@ footer{
 }
 .category-title{
     grid-column: span 2;
+    text-transform: capitalize;
+    color: #550398;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.category  .footer-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #9d4edd;
+}
+.footer-link:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.footer-title, .info{
+    color: black;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+.footer-title{
+    margin-top: 80px;
+    color::black;
+}
+.footer-social-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-link{
+    color: black;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+.social-link:nth-child(1){
+    margin-left: 0%;
+}
+.footer-credit{
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    text-align: center;
+    color: black;
+    background: rgba(255, 255,0, 0.3);
 }
