@@ -48,7 +48,7 @@ const createFooter = () => {
             <a href="#" class="social-link">twitter</a>
         </div>
     </div>
-    <p class="footer-credit">Clothing, Best apparels online store</p>
+    <p class="footer-credit">Modern House, Best apparels online store</p>
     `;
 }
 
