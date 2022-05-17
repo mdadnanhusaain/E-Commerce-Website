@@ -40,7 +40,7 @@ const sendData = (path, data) => {
 const processData = (data) => {
     loader.style.display = null;
     if(data.alert){
-        showAlert(data.alert);
+        alert(data.alert);
     } else if(data.name){
         // create authToken
         data.authToken = generateToken(data.email);
@@ -56,7 +56,7 @@ const processData = (data) => {
 }
 
 // alert function
-const showAlert = (msg) => {
+const alert = (msg) => {
     let alertBox = document.querySelector('.alert-box');
     let alertMsg = document.querySelector('.alert-msg');
     alertMsg.innerHTML = msg;
