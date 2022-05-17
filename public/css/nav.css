@@ -22,6 +22,7 @@
 
 .brand-logo{
     height: 60px;
+    margin-left: 2rem;
 }
 
 .nav-items{
@@ -35,12 +36,12 @@
 }
 
 .search-box{
-    width: 80%;
+    width: 65%;
     height: 40px;
     padding: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border: 1px solid #d1d1d1;
+    border: 1.5px solid black;
     text-transform: capitalize;
     background: none;
     color: #a9a9a9;
@@ -50,7 +51,7 @@
 .search-btn{
     width: 20%;
     height: 40px;
-    padding: 10px 30px;
+    
     border: none;
     outline: none;
     cursor: pointer;
@@ -63,7 +64,8 @@
 }
 
 .search-box::placeholder{
-    color: #a9a9a9;
+    color: black;
+    font-weight: 600;
 }
 
 .nav-items a{
@@ -92,11 +94,12 @@
     text-decoration: none;
     color: #383838;
     opacity: 0.5;
-    transition: .5s;
+    transition: .2s;
 }
 
 .link:hover{
     opacity: 1;
+    font-weight: 550;
 }
 
 .login-logout-popup{
