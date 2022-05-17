@@ -25,10 +25,14 @@ body{
 
 .logo{
     height: 80px;
+    justify-content: center;
     display: block;
     margin: 0 auto 50px;
 }
 
+.container div{
+    padding-left: 3rem;
+}
 input[type="text"],
 input[type="password"],
 input[type="email"],
