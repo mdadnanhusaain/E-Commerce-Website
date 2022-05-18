@@ -27,14 +27,19 @@ const compareToken = (token, key) => {
 
 // send data function
 const sendData = (path, data) => {
-    fetch(path, {
-        method: 'post',
-        headers: new Headers({'Content-Type': 'application/json'}),
-        body: JSON.stringify(data)
-    }).then((res) => res.json())
-    .then(response => {
-        processData(response);
-    })
+    var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            alert('success')
+          });
+        });
 }
 
 const processData = (data) => {
