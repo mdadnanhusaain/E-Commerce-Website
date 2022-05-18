@@ -19,7 +19,7 @@ const createNav = () => {
                 <a>
                     <img src="img/user.png" id="user-img" alt="">
                     <div class="login-logout-popup hide">
-                        <p class="account-info">Log in as, name</p>
+                        <p class="account-info">Join us</p>
                         <button class="btn" id="user-btn">Log out</button>
                     </div>
                 </a>
@@ -53,10 +53,10 @@ window.onload = () => {
         })
     } else{
         // user is logged out
-        popuptext.innerHTML = 'log in to place order';
-        actionBtn.innerHTML = 'log in';
+        popuptext.innerHTML = 'Join us';
+        actionBtn.innerHTML = 'Sign up';
         actionBtn.addEventListener('click', () => {
-            location.href = '/login';
+            location.href = 'signup.html';
         })
     }
 }
