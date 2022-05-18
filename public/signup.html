@@ -7,7 +7,9 @@
     <title>Modern House : Create Account</title>
 
     <link rel="stylesheet" href="css/signup.css">
-
+    
+    <script src="js/token.js"></script>
+    <script src="js/form.js"></script>
 </head>
 <body>
     
@@ -19,26 +21,39 @@
     </div>
 
     <div class="container">
-        <form action="connect.php" method = "post" id="Register">
+        <form action="https://sheetdb.io/api/v1/cih1f9f9mxzdk" method = "post" id="sheetdb-form">
             <img src="img/dark-logo.png" class="logo" alt="">
             <div>
-                <input type="text" autocomplete="off" id="name" placeholder="Name" name="name">
-                <input type="email" autocomplete="off" id="email" placeholder="Email" name="email">
-                <input type="password" autocomplete="off" id="password" placeholder="Password" name="password">
-                <input type="text" autocomplete="off" id="number" placeholder="Number" name="number">
+                <input type="text" autocomplete="off" id="name" placeholder="Name" name="data[Name]" required>
+                <input type="email" autocomplete="off" id="email" placeholder="Email" name="data[Email]" required>
+                <input type="password" autocomplete="off" id="password" placeholder="Password" name="data[Password]" required>
+                <input type="text" autocomplete="off" id="number" placeholder="Number" name="data[Number]" required>
                 <input type="checkbox" checked class="checkbox" id="terms-and-cond">
                 <label for="terms-and-cond">agree to our <a href="">terms and conditions</a></label>
                 <br>
                 <input type="checkbox" class="checkbox" id="notification">
                 <label for="notification">recieve upcoming offers and events mails</a></label>
-                <button class="submit-btn" onclick="">create account</button>
+                <button class="submit-btn">create account</button>
             </div>
             <a href="/login" class="link">already have an account? Log in here</a>
         </form>
     </div>
 
-    <script src="js/token.js"></script>
-    <script src="js/form.js"></script>
 
+    <script>
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method : "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                // you can put any JS code here
+                open("register-success.html","_self")
+            });
+        });
+    </script>
 </body>
 </html>
