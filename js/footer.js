@@ -35,7 +35,7 @@ const createFooter = () => {
     </div>
     <p class="footer-title">about company</p>
     <p class="info">This website is a buisness website. In this website we are selling products for men, women, kids and also the accessories required for the uses of people.</p>
-    <p class="info">support emails - vedansh19singh@gmail.com, mdadnanhusaain@gmail.com, gautammakharia97@gmail.com</p>
+    <p class="info">support emails - vedansh19singh@gmail.com, mdadnanhusaain@gmail.com, gautammakharia36@gmail.com</p>
     <p class="info">telephone - 6377257467, 9523870330, 7733061728</p>
     <div class="footer-social-container">
         <div>
