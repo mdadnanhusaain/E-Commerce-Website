@@ -12,18 +12,6 @@ const createNav = () => {
                     <li class="link-item"><a href="#kids" class="link">kids</a></li>
                     <li class="link-item"><a href="#Accessories" class="link">accessories</a></li>
                 </ul>
-                <div class="search">
-                    <input type="text" class="search-box" placeholder="search brand, product">
-                    <button class="search-btn">search</button>
-                </div>
-                <a>
-                    <img src="img/user.png" id="user-img" alt="">
-                    <div class="login-logout-popup hide">
-                        <p class="account-info">Join us</p>
-                        <button class="btn" id="user-btn">Log out</button>
-                    </div>
-                </a>
-                <a href="#"><img src="img/cart.png" alt=""></a>
             </div>
         </div>
     `;
