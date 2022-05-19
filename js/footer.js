@@ -33,19 +33,15 @@ const createFooter = () => {
             </ul>
         </div>
     </div>
-    <p class="footer-title">about company</p>
-    <p class="info">This website is a buisness website. In this website we are selling products for men, women, kids and also the accessories required for the uses of people.</p>
-    <p class="info">support emails - vedansh19singh@gmail.com, mdadnanhusaain@gmail.com, gautammakharia36@gmail.com</p>
-    <p class="info">telephone - 6377257467, 9523870330, 7733061728</p>
+    <p class="footer-title">About Company</p>
+    <p class="info">This website is a business website. In this website we are selling products for men, women, kids and also the accessories required for the uses of people.</p>
+    <p class="info">Support Emails - vedansh19singh@gmail.com, mdadnanhusaain@gmail.com, gautammakharia36@gmail.com</p>
+    <p class="info">Mobile No.: - 6377257467, 9523870330, 7733061728</p>
     <div class="footer-social-container">
         <div>
-            <a href="#" class="social-link">terms & services</a>
-            <a href="#" class="social-link">privacy page</a>
-        </div>
-        <div>
-            <a href="#" class="social-link">instagram</a>
-            <a href="#" class="social-link">facebook</a>
-            <a href="#" class="social-link">twitter</a>
+            <a href="https://flowcv.me/mdadnanhusaain" class="social-link">Md Adnan Hussain</a>
+            <a href="https://flowcv.me/gautamkumar" class="social-link">Gautam Kumar</a>
+            <a href="https://www.linkedin.com/in/vedansh19singh" class="social-link">Vedansh Singh</a>
         </div>
     </div>
     <p class="footer-credit">Modern House, Best apparels online store</p>
